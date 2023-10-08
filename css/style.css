@@ -1,17 +1,23 @@
 /*reseteo de valores*/
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.contenedorHeader{
+body a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.contenedorHeader {
     display: inline-block;
-    width:100%;
+    width: 100%;
     height: 100vh;
 }
 
-.contenedorHeaderSuperior{
+.contenedorHeaderSuperior {
     background-color: rgb(50, 50, 50);
     display: flex;
     width: 100%;
@@ -20,86 +26,114 @@
 
 
 }
-.logo img{
+
+.logo img {
     width: 150px;
     display: inline-block;
 }
 
-.logo{
+.logo {
     display: inline-block;
     width: 30%;
     height: 100%;
-    color:white;
+    color: white;
     text-align: center;
     font-size: 1.5em;
 
 }
 
-.navContenedor{
+.navContenedor {
     display: inline-block;
     text-align: right;
     width: 70%;
     height: 100%;
-       
+
 }
 
-.navMenu{
+.navMenu {
     display: flex;
     flex-direction: column;
-    align-items:right;
+    align-items: right;
     padding-right: 5rem;
     justify-content: center;
     height: 100%;
     width: 100%;
 }
-.navMenu li{
+
+.navMenu li {
     display: inline-block;
-    list-style:none;
-    
+    list-style: none;
+
     margin: 0.5rem;
 
 }
-.navMenu a{
+
+.navMenu a {
     text-decoration: none;
     color: white;
 }
 
 
-.contenedorTextoHeader{
+.contenedorTextoHeader {
     background-image: url("../assets/img/ba1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: right;
     height: 85%;
-    color:white;
+    color: white;
     padding: 5rem;
 }
 
-.losOradores{
+.contenedorTextoHeader h2 {
+    font-weight: bold;
+}
+
+.contenedorTextoHeader .TarjetaQuieroSerOrador {
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorTextoHeader .TarjetaComprarTickets {
+    background-color: rgb(41, 167, 68);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.losOradores {
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-   
+
 }
 
-.tarjetas{
-    display:inline-flex;
-    justify-content:space-between;
+.tarjetas {
+    display: inline-flex;
+    justify-content: space-between;
     width: 58rem;
     align-content: center;
 }
 
-.contenedorConoceMas{
+.contenedorConoceMas {
     display: flex;
     margin-top: 2rem;
     width: 100%;
     height: 18rem;
 }
 
-.contenedorConoceMas .ConoceMasFoto{
+.contenedorConoceMas .ConoceMasFoto {
     background-image: url("../assets/img/honolulu.jpg");
     display: inline-block;
     background-size: cover;
@@ -109,7 +143,7 @@
     width: 50%;
 }
 
-.contenedorConoceMas .ConoceMas{
+.contenedorConoceMas .ConoceMas {
     background-color: rgb(53, 58, 64);
     display: inline-block;
     color: white;
@@ -117,30 +151,89 @@
     height: 100%;
     width: 50%;
 }
-footer{
+
+.contenedorConoceMas .TarjetaConoceMas {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 4px;
+    color: white;
+
+}
+
+
+
+
+
+footer {
     margin-top: 2rem;
     background-color: rgb(28, 56, 70);
     color: white;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     min-height: 100px;
     width: 100vw;
 }
 
-footer ul{
+footer ul {
     width: 80vw;
     display: inline-flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-footer li{
+footer li {
     display: inline-block;
-    list-style:none;
+    list-style: none;
     align-content: center;
     text-align: center;
     color: white;
     width: 120px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    text-align: left;
+}
+
+.card .card-title {
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 3px 8px;
+    margin-left: 2px;
+}
+
+.card .TarjetaJavaScript {
+    background-color: rgb(254, 193, 7);
+    color: black;
+    font-weight: bold;
+
+}
+
+.card .TarjetaReact {
+    background-color: rgb(23, 162, 183);
+    color: white;
+    font-weight: bold;
+}
+
+.card .TarjetaNegocios {
+    background-color: rgb(108, 117, 126);
+    color: white;
+    font-weight: bold;
+}
+
+.card .TarjetaStartups {
+    background-color: rgb(219, 54, 70);
+    color: white;
+    font-weight: bold;
 }
