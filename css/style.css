@@ -31,6 +31,7 @@
     height: 100%;
     color:white;
     text-align: center;
+    font-size: 1.5em;
 
 }
 
@@ -73,4 +74,73 @@
     height: 85%;
     color:white;
     padding: 5rem;
+}
+
+.losOradores{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+   
+}
+
+.tarjetas{
+    display:inline-flex;
+    justify-content:space-between;
+    width: 58rem;
+    align-content: center;
+}
+
+.contenedorConoceMas{
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    height: 18rem;
+}
+
+.contenedorConoceMas .ConoceMasFoto{
+    background-image: url("../assets/img/honolulu.jpg");
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+.contenedorConoceMas .ConoceMas{
+    background-color: rgb(53, 58, 64);
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+}
+footer{
+    margin-top: 2rem;
+    background-color: rgb(28, 56, 70);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100px;
+    width: 100vw;
+}
+
+footer ul{
+    width: 80vw;
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+footer li{
+    display: inline-block;
+    list-style:none;
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 120px;
 }
